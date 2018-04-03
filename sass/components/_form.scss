@@ -15,6 +15,10 @@
         background-color: rgba($color-white,0.5);
         border:none;
         border-bottom: 3px solid transparent;
+
+        @include respond(tab-port){
+            width:70%;
+        }
         &:focus{
             outline:none;
             border-bottom: 3px solid $color-primary-dark;
@@ -52,6 +56,10 @@
         width: 40%;
         position: relative;
         padding-left: 4rem;
+        @include respond(tab-port){
+            width:100%;
+            margin-bottom: 1rem;
+        }
       
     }
 
