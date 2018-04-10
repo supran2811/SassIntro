@@ -42,10 +42,6 @@ body {
     body {
       padding: 0; } }
 
-::selection {
-  background-color: #28b485;
-  color: #fff; }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -544,7 +540,7 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  @media (max-width: 56.25em) {
     .card {
       height: auto;
       border-radius: 3px;

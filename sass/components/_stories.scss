@@ -25,14 +25,19 @@
 
     &__shape{
         position: relative;
-        background-color: red;
         width: 15rem;
-        height:15rem;
+        height: 15rem;
+        background-color: red;
+        overflow: hidden;
         float: left;
-        shape-outside: circle(50% at 50% 50%);
         -webkit-shape-outside:circle(50% at 50%  50%);
-        clip-path: circle(50% at 50% 50%);
-        -webkit-clip-path:circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+       
+
+        @supports (-webkit-clip-path:circle(50% at 50% 50%)) or(clip-path: circle(50% at 50% 50%)){
+            -webkit-clip-path:circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+        }
        
 
     }
